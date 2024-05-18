@@ -1,0 +1,441 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* menu */
+header {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #b5b5b5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+  text-decoration: none;
+  color: #b5b5b5;
+}
+
+header nav li:hover a {
+  color: black;
+  transition: 0.5s;
+}
+
+main {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header ul {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.menuitem {
+  display: inline-block;
+  margin-right: 25px;
+  position: relative;
+}
+
+#home, #sobre, #conhecimentos, #projetos, #formacao {
+  scroll-margin-top: 90px;
+}
+
+/* inicio - nome, fundo */
+.home {
+  color: white;
+  height: 1000px;
+  padding-top: 350px;
+  background-image: url(img/home-background-img.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+#araujo {
+  font-family: Orbitron, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 85px;
+}
+
+/* sobre mim - foto, desc */
+.sobre {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding-left: 100px;
+  display: flex;
+}
+
+.olavofoto { 
+  position: relative;
+  order: 3;
+  right: 0;
+}
+
+#olavofoto {
+  height: 1050px;
+}
+
+#headingsobre {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Orbitron, sans-serif;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+#textosobre {
+  width: 60%;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: Arial, sans-serif;
+}
+
+#textosobre a {
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+#logolinkedin {
+  width: 50px;
+}
+
+/* conhecimentos */
+.conhecimentos {
+  width: 100%;
+  height: 430px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+#headingconhecimentos {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Orbitron, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.boxes {
+  height: 210px;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+}
+
+.box1-conhecimentos {
+  text-align: center;
+  color: black;
+  align-self: center;
+  background-color: white;
+  height: 250px;
+  max-width: 210px;
+  border-radius: 10%;
+  flex: 1;
+  margin: 25px;
+}
+
+#logohtml {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+}
+
+.box1-conhecimentos p {
+  margin-top: 13px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box2-conhecimentos {
+  text-align: center;
+  color: black;
+  align-self: center;
+  background-color: white;
+  height: 250px;
+  max-width: 210px;
+  border-radius: 10%;
+  flex: 1;
+  margin: 25px;
+}
+
+#logocss {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.box2-conhecimentos p {
+  margin-top: 13px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box3-conhecimentos {
+  text-align: center;
+  color: black;
+  align-self: center;
+  background-color: white;
+  height: 250px;
+  max-width: 210px;
+  border-radius: 10%;
+  flex: 1;
+  margin: 25px;
+}
+
+#logojs {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+}
+
+.box3-conhecimentos p {
+  margin-top: 13px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* projetos */
+.projetos {
+  color: white;
+  z-index: 0;
+  background-color: black;
+  width: 100%;
+  height: 1610px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#sub {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  color: #b5b5b5;
+}
+
+.projs {
+  margin-top: 45px;
+}
+
+.projs p {
+  color: black;
+  text-align: center;
+  margin-bottom: -5px;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.projs2 {
+  margin-top: 35px;
+}
+
+.projs2 p {
+  color: black;
+  text-align: center;
+  margin-bottom: -6px;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#headingprojetos {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Orbitron, sans-serif;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+#projeto1 {
+  border: 5px solid white;
+  width: 1200px;
+  border-radius: 1%;
+}
+
+#SearchRanking {
+  border: 5px solid white;
+  width: 1200px;
+  border-radius: 1%;
+}
+
+#gitlogo {
+  margin-top: 20px;
+
+  width: 50px;
+
+}
+
+/* formacao */ 
+.formacao {
+  color: white;
+  z-index: 0;
+  background-color: black;
+  width: 100%;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 1));
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 120px;
+}
+
+#headingformacao {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Orbitron, sans-serif;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.formacao-container {
+  margin-top: 45px;
+  display: flex;
+}
+
+.formacao p {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#typeF {
+  font-size: 15px;
+  color: #b5b5b5;
+}
+
+#typeF2 {
+  font-size: 15px;
+  color: #b5b5b5;
+}
+
+.n1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.per {
+  font-size: 20px;
+}
+
+.caixanome {
+  background-color: white;
+  height: 300px;
+  width: 500px;
+  border-radius: 0px 10px 10px 0px;
+  order: 2;
+  padding-top: 50px;
+}
+
+#infnet {
+  order: 1;
+  width: 300px;
+}
+
+.caixanome2 {
+  background-color: white;
+  height: 300px;
+  width: 500px;
+  border-radius: 10px 0px 0px 10px;
+  order: 2;
+  padding-top: 50px;
+  margin-left: 30px;
+}
+
+#nasa {
+  order: 3;
+  width: 300px;
+}
+
+/* rodapé */
+footer {
+  width: 100%;
+  height: 270px;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.obg {
+  margin-top: 50px;
+}
+
+footer p {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+footer hr {
+  opacity: 0.2;
+  margin-bottom: 28px;
+}
+
+footer p span {
+  font-weight: bold;
+}
+
+footer h2 {
+  margin-top: 10px;
+  font-size: 80px;
+  font-weight: 900;
+  font-family: Orbitron, sans-serif;
+}
+
+footer a {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #b5b5b5;
+}
+
+footer ul li img {
+  margin-top: 10px;
+  width: 35px;
+  margin-bottom: 25px;
+}
+
+.redes {
+  display: inline-block;
+  margin-right: 5px;
+
+}
+
+footer a:hover {
+  color: black;
+  transition: 1s;
+}
